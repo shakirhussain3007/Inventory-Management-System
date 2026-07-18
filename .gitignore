@@ -1,0 +1,38 @@
+# =========================
+# Virtual Environment
+# =========================
+venv/
+.venv/
+env/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+
+# Allow the example environment file
+!.env.example
+
+# =========================
+# Python Cache
+# =========================
+__pycache__/
+*.py[cod]
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Test Scripts
+# =========================
+tests/hashpassTest.py
+tests/jwtTest.py
