@@ -36,7 +36,7 @@ A modern Inventory Management System built with **FastAPI**, **SQLAlchemy**, and
 
 ## Project Structure
 
-```
+```text
 Inventory-Management-System/
 │
 ├── app/
@@ -79,13 +79,13 @@ python -m venv venv
 
 ### Activate Virtual Environment
 
-Windows
+**Windows**
 
 ```bash
 venv\Scripts\activate
 ```
 
-Linux / macOS
+**Linux / macOS**
 
 ```bash
 source venv/bin/activate
@@ -123,6 +123,8 @@ ACCESS_TOKEN_EXPIRE_MINUTES=60
 
 ## Database Migration
 
+Run database migrations:
+
 ```bash
 alembic upgrade head
 ```
@@ -131,21 +133,31 @@ alembic upgrade head
 
 ## Run the Application
 
+Start the FastAPI server:
+
 ```bash
 uvicorn app.main:app --reload
+```
+
+Application will run at:
+
+```text
+http://127.0.0.1:8000
 ```
 
 ---
 
 ## API Documentation
 
-Swagger UI
+FastAPI provides interactive API documentation.
+
+### Swagger UI
 
 ```
 http://127.0.0.1:8000/docs
 ```
 
-ReDoc
+### ReDoc
 
 ```
 http://127.0.0.1:8000/redoc
@@ -156,8 +168,9 @@ http://127.0.0.1:8000/redoc
 ## Security
 
 - JWT Authentication
-- Password Hashing with Bcrypt
+- Password Hashing using Bcrypt
 - Environment Variables for Sensitive Data
+- SQLAlchemy ORM for Database Operations
 
 ---
 
@@ -165,15 +178,20 @@ http://127.0.0.1:8000/redoc
 
 - Role-Based Access Control (RBAC)
 - Docker Support
-- Unit Testing
+- Unit & Integration Testing
 - CI/CD Pipeline
 - Inventory Reports
 - Email Notifications
 
 ---
 
-## Author
+## 👨‍💻 Developed By
 
+**Laiba Irshad**  
 **Shakir Hussain**
 
-Backend Developer | Python | FastAPI | SQLAlchemy | MySQL
+---
+
+## License
+
+This project is licensed under the MIT License.
